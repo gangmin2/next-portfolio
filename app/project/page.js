@@ -28,7 +28,7 @@ export default async function Page() {
 
 	return (
 		<main style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', padding: '32px' }}>
-			{data.map(item => <ProjectItem data={item} />)}
+			{data.map(item => <ProjectItem key={item.id} data={item} />)}
 		</main>
 	)
 }
