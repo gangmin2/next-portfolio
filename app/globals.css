@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-hex: #1e293b;
+  --background-hex: #e2e8f0;
+  --background-secondary: #cbd5e1;
+  --background-light: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: #f1f5f9;
+    --background-hex: #1f2937;
+    --background-secondary: #11182780;
+    --background-light: #64748b;
+  }
+}
+
+body {
+  color: var(--foreground-hex);
+  background-color: var(--background-hex);
+}
+
+nav > ul {
+  color: var(--foreground-hex);
+  background-color: var(--background-secondary);
+}
+
+footer {
+  color: var(--foreground-hex);
+  background-color: var(--background-secondary);
+}
+
+.card {
+  color: var(--foreground-hex);
+  background-color: var(--background-light);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
