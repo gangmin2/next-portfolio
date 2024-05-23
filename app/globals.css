@@ -8,14 +8,11 @@
   --background-secondary: #cbd5e1;
   --background-light: #ffffff;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-hex: #f1f5f9;
-    --background-hex: #1f2937;
-    --background-secondary: #11182780;
-    --background-light: #64748b;
-  }
+:root.dark {
+  --foreground-hex: #f1f5f9;
+  --background-hex: #1f2937;
+  --background-secondary: #11182780;
+  --background-light: #64748b;
 }
 
 body {
