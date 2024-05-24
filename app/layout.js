@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 			<body>
 				<Header />
 
-				<main style={{ height: 'calc(100vh - 100px)', paddingTop: '100px', }}>{children}</main>
+				<main style={{ minHeight: 'calc(100vh - 100px)', paddingTop: '100px', }}>{children}</main>
 
 				<Footer />
 			</body>
