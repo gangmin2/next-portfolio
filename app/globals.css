@@ -35,6 +35,10 @@ footer {
   background-color: var(--background-light);
 }
 
+.contact-box:hover {
+  background-color: var(--background-light);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
